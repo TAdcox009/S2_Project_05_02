@@ -1,0 +1,112 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 2
+   
+   Style Sheet for Grids used in the Costume Expressions Front Page
+   Author: Todd Adcox Jr
+   Date:  10-26-18 
+   
+   Filename: ce_grids.css
+
+*/
+
+
+/* Grid Rows Styles */
+
+/* The elements of div with a class of row are being set to 100% width and are cleared of floating elements on both sides, as well as horizontally centering it */
+div.row {
+    width: 100%;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* prventing container colapse */
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* Grid Columns Styles */
+
+/* every div element with the class of column is being floated to the left */
+div[class^='column'] {
+    float: left;
+}
+
+/* the following is selecting the div element with the class of column(followed by a number) to have a width of the number that follows it */
+div.column100 {
+    width: 100%;
+}
+
+div.column50 {
+    width: 50%;
+}
+
+div.column33 {
+    width: 33%;
+}
+
+div.column67 {
+    width: 67%;
+}
+
+div.column25 {
+    width: 25%;
+}
+
+div.column75 {
+    width: 75%;
+}
+
+div.column20 {
+    width: 20%;
+}
+
+div.column40 {
+    width: 40%;
+}
+
+div.column60 {
+    width: 60%;
+}
+
+div.column80 {
+    width: 80%;
+}
+
+/* Grid Spacing Styles */
+
+/* this is adding a border box to the div elements with their classes */
+div.container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.row {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.classes {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div[class^='column'] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.cell a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
